@@ -1,0 +1,11 @@
+blib
+cookies
+CVS
+ignore
+junk
+Makefile$
+Makefile.old
+.Old
+rc$
+SKIP
+.tar.gz
