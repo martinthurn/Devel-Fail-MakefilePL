@@ -1,6 +1,4 @@
 
-# $Id: MakefilePL.pm,v 1.7 2010-12-02 23:39:28 Martin Exp $
-
 =head1 NAME
 
 Devel::Fail::MakefilePL - a distro that always fails the `perl Makefile.PL` stage
@@ -28,7 +26,7 @@ package Devel::Fail::MakefilePL;
 use strict;
 use warnings;
 my
-$VERSION = do { my @r = (q$Revision: 1.7 $ =~ /\d+/g); sprintf "%d."."%03d" x $#r, @r };
+$VERSION = 1.014;
 
 1;
 
