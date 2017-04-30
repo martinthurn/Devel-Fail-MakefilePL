@@ -26,7 +26,7 @@ package Devel::Fail::MakefilePL;
 use strict;
 use warnings;
 my
-$VERSION = 1.014;
+$VERSION = 1.015;
 
 1;
 

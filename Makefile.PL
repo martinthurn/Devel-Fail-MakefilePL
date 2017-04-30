@@ -2,25 +2,26 @@
 use strict;
 use warnings;
 
+use lib '.';
+
 use inc::Module::Install;
 
 my
-$VERSION = 1.81;
+$VERSION = 1.82;
 
-BEGIN
-  {
+BEGIN {
   name('Devel-Fail-MakefilePL');
   all_from('lib/Devel/Fail/MakefilePL.pm');
   license('perl');
   WriteAll;
   } # end of BEGIN block
 
-It's surprisingly hard to force the execution of this Makefile.PL to fail!
-Try this on for size:
+Deliberate_compile_error!
 
-String found where operator expected at Makefile.PL line 21, near "at Makefile"
-	(Do you need to predeclare at?)
-syntax error at Makefile.PL line 21, near "at Makefile"
-Execution of Makefile.PL aborted due to compilation errors.
+foo
+
+bar baz
+
+exit 88;
 
 __END__
